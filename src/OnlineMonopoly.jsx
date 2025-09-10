@@ -5,7 +5,7 @@ const SIZE = 6;
 const SOCKET_URL =
   typeof window !== "undefined" && window.location.origin
     ? window.location.origin
-    : "http://localhost:3001";
+    : "https://monopoly-online-hh01.onrender.com";
 
 function indexToCoord(i) {
   const s = SIZE;
