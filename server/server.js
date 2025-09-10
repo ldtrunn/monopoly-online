@@ -8,6 +8,14 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors());
+app.get("/", (_req, res) => {
+  res.send("Monopoly Socket.IO server is running");
+});
+
+app.get("/healthz", (_req, res) => {
+  res.send("ok");
+});
+
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: { origin: "*" },
