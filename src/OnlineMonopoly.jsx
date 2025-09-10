@@ -2,10 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { io } from "socket.io-client";
 
 const SIZE = 6;
-const SOCKET_URL =
-  typeof window !== "undefined" && window.location.origin
-    ? window.location.origin
-    : "https://monopoly-online-hh01.onrender.com";
+const SOCKET_URL = "https://monopoly-online-hh01.onrender.com";
 
 function indexToCoord(i) {
   const s = SIZE;
